@@ -37,7 +37,7 @@ def gen_commit_file():
 
     fname = f'f_commit{commit_index}.c'
 
-    with oepn(fname, 'w') as f:
+    with open(fname, 'w') as f:
         for i in range(0, 2000):
             f.write(gen_function())
     
